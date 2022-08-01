@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const sequelize = require("./config/dbConnection");
+const sequelize = require("./config/db/dbConnection");
 const PORT = process.env.port || 3001;
 
 app.use(express.urlencoded({ extended: false }));
