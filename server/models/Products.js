@@ -18,6 +18,10 @@ Product.init(
       type: DataTypes.STRING(500),
       allowNull: false,
     },
+    price: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+    },
     img_url: {
       type: DataTypes.STRING,
       allowNull: false,
