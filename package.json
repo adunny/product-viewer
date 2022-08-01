@@ -1,0 +1,16 @@
+{
+  "name": "product-viewer",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "repository": "git@github.com:adunny/product-viewer.git",
+  "author": "alen <alen.dunn1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "concurrently \"cd server && yarn install\" \"cd client && yarn install\"",
+    "dev": "concurrently \" cd server && yarn start\" \"cd client && yarn start\"",
+    "seed": "cd server/config/db && node seeds"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
