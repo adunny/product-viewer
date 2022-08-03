@@ -62,7 +62,8 @@ const products = [
     title: "Ducky One 3 Matcha",
     description:
       "Dual layer hotswap PCB w/ exclusive Kailh yellow hotswap sockets, Equipped with dual-layer high-grade silicone and EVA foam sound dampeners, Thick, PBT Double Shot seamless keycaps, 3 level adjustable feet and detachable braided USB Type-C cable.",
-    img_url: "",
+    img_url:
+      "https://mechanicalkeyboards.com/shop/images/products/large_DKON2187-USPDMAEGGC1F99_1.jpg",
     price: 109.0,
   },
   {
