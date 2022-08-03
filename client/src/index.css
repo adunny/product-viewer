@@ -23,7 +23,11 @@ code {
 
 .card-img {
   height: 23rem;
-  width: 33.45rem;
+}
+
+.single-card-img {
+  height: 23rem;
+  width: 23rem;
 }
 
 .product-list {

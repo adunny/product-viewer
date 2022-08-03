@@ -20,7 +20,7 @@ function Products() {
       <Row className="mt-5 product-list">
         {!!products.length &&
           products.map((product, i) => (
-            <Col md={6} key={i}>
+            <Col sm={12} md={6} key={i}>
               <Card className="mt-2 mb-2 product-card">
                 <Card.Img src={product.img_url} className="rounded card-img" />
                 <Card.ImgOverlay>
