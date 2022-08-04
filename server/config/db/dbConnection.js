@@ -1,8 +1,13 @@
 const { Sequelize } = require("sequelize");
+let sequelize;
 
-const sequelize = new Sequelize("product_viewer", "root", "password", {
-  host: "localhost",
-  dialect: "mysql",
-});
+if (process.env.JAWSDB_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+} else {
+  sequelize = new Sequelize("product_viewer", "root", "password", {
+    host: "localhost",
+    dialect: "mysql",
+  });
+}
 
 module.exports = sequelize;
