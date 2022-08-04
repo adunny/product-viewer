@@ -22,15 +22,19 @@ function Products() {
           products.map((product, i) => (
             <Col sm={12} md={6} key={i}>
               <Card className="mt-2 mb-2 product-card">
-                <Card.Img src={product.img_url} className="rounded card-img" />
-                <Card.ImgOverlay>
-                  <Card.Title>{product.title}</Card.Title>
-                  <Card.Text>Price: {product.price}$</Card.Text>
-                  <Link
-                    to={`/products/${product.id}`}
-                    className="stretched-link"
-                  />
-                </Card.ImgOverlay>
+                <Card.Header className="bg-secondary text-center">
+                  <span className="fs-4 fw-bold">{product.title}</span>
+                  <br />${product.price}
+                </Card.Header>
+                <Link
+                  to={`/products/${product.id}`}
+                  className="stretched-link"
+                />
+                <Card.Img
+                  src={product.img_url}
+                  variant={"bottom"}
+                  className="rounded card-img"
+                />
               </Card>
             </Col>
           ))}

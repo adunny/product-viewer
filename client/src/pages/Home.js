@@ -11,14 +11,14 @@ function Home() {
       <Row className="justify-content-center align-items-center">
         <Card>
           <Card.Body className="text-center">
-            <Card.Title>Product Viewer</Card.Title>
+            <Card.Title>Keyboard Store</Card.Title>
             <Card.Text>
               <Link
                 to={"/products"}
                 role="button"
                 className="btn btn-secondary"
               >
-                view products
+                View Products
               </Link>
             </Card.Text>
           </Card.Body>
