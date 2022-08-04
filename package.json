@@ -9,8 +9,7 @@
     "install": "concurrently \"cd server && yarn install\" \"cd client && yarn install\"",
     "dev": "concurrently \" cd server && yarn start\" \"cd client && yarn start\"",
     "seed": "cd server/config/db && node seeds",
-    "build": "cd client && yarn build",
-    "heroku-postbuild": "yarn seed",
+    "heroku-postbuild": "concurrently \"yarn seed\" \"cd client && yarn build\"",
     "start": "cd server && yarn start"
   },
   "dependencies": {
