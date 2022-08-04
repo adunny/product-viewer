@@ -8,6 +8,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "start": "node server.js"
   }
 }
